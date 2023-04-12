@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT by Raihan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div>
+        <input
+          type="text"
+          id="textInp"
+          placeholder="Write a question..."
+          autofocus
+        />
+        <button id="submitInp">Submit</button>
+        <button id="voiceInp">
+          <i
+            class="fa fa-microphone"
+            style="font-size: 32px; color: rgb(255, 255, 255)"
+          ></i>
+        </button>
+      </div>
+      <div>
+        <div id="outbox" class="text" contenteditable="true">Your Answer is .....</div>
+        <button id="readvolume">
+          <i class="fa fa-volume-up" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="down">
+        <select id="voiceSelect">
+          <option value="en-us">English</option>
+          <option value="bn-bd">Bangla</option>
+        </select>
+        <button id="downloadAudio">Convert Audio</button>
+
+        <audio
+          src="https://translate.google.com/translate_tts?ie=UTF-8&tl=en-us&client=tw-ob&q=Raihan chat"
+          id="audioplayer"
+          controls
+        ></audio>
+      </div>
+    </div>
+
+    <a href="https://ahraihan.netlify.app">A.H.Raihan</a>
+
+    <script src="js/main.js"></script>
+    <script>
+      // responsiveVoice.speak("hi");
+    </script>
+  </body>
+</html>

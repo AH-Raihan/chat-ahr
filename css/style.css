@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(45deg, #d1486d, #71d08e);
+}
+.container {
+  width: calc(100% - 20px);
+  margin: 20px auto;
+  background: #ffffff47;
+  border-radius: 30px;
+  padding: 15px;
+  backdrop-filter: blur(1px);
+}
+.container div {
+  margin: 10px auto;
+}
+.container div:nth-child(1) {
+  display: flex;
+  text-align: left;
+}
+.container div input {
+  padding: 10px;
+  outline: none;
+  border: 2px solid #0d5846;
+  border-radius: 24px;
+  width: 100%;
+  font-size: 18px;
+  height: 45px;
+}
+.container button {
+  font-size: 20px;
+  border: none;
+  background: linear-gradient(45deg, #0c3658, #0e8430);
+  color: white;
+  outline: none;
+  margin: 0 2px;
+  border-radius: 20px;
+  padding: 1px 8px;
+  cursor: pointer;
+}
+#voiceInp.active {
+  background: #ad3030;
+}
+.container div .text {
+  /* width: 100%;  */
+  height: 65vh;
+  border: 1px solid #0d5448;
+  border-radius: 16px;
+  outline: none;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  padding: 5px;
+  color: #3c3b3b;
+  background: white;
+  overflow: auto;
+}
+input#textInp:focus {
+  border: 2px solid white;
+}
+.container div:nth-child(2) {
+  position: relative;
+}
+#readvolume {
+  position: absolute;
+  right: -2px;
+  top: 0;
+  border-radius: 0px 15px 1px 11px;
+}
+#readvolume:hover {
+  opacity: 0.5;
+}
+.down{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    background: #6258587a;
+    border-radius: 27px;
+}
+.down button,
+audio,select{
+    height: 40px;
+    border-radius: 30px;
+    margin: 8px;
+    background: snow;
+    color: #000;
+    border: none;
+    outline: none;
+    appearance: none;
+    padding: 0 14px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    display: block;
+}

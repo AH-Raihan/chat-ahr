@@ -79,7 +79,7 @@ function get(sendtext) {
     headers: {
       "Content-Type": "application/json",
       Authorization:
-        "Bearer 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",
+        "Bearer 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",
     },
   })
     .then((res) => {
